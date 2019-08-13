@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -45,7 +45,7 @@
         android:layout_marginTop="32dp"
         android:text="JP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/go" />
 
     <TextView
         android:id="@+id/jp"
