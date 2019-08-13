@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String n = ntd.getText().toString();
 
                 if (n.length() == 0) {
-                    showAlert("Problem", "Please enter your NTD amount", "OK", null);
+                    showAlert(getString(R.string.problem), getString(R.string.please_enter_ntd), getString(R.string.ok), null);
                 } else {
                     float usd = calculate(Float.parseFloat(n));
                     DialogInterface.OnClickListener listner = new DialogInterface.OnClickListener() {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     };
 
-                    showAlert("Result", "USD is " + usd, "OK", listner);
+                    showAlert(getString(R.string.result), getString(R.string.usd_is) + usd, getString(R.string.ok), listner);
                 }
             }
         });
